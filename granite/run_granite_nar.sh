@@ -2,6 +2,8 @@
 
 export PYTHONPATH="..":$PYTHONPATH
 
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export PYTORCH_ALLOC_CONF=expandable_segments:True
 
 MODEL_ID="ibm-granite/granite-speech-4.1-2b-nar"
 BATCH_SIZE=256
